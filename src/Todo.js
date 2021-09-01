@@ -11,7 +11,7 @@ function Todo(props) {
         onChange={props.onChange} />
       </td>
       <td>
-          {props.description}
+        {props.description}
       </td>
 
       <td>

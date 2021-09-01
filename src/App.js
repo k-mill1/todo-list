@@ -18,7 +18,7 @@ const App = () => {
       <Add />
       <Links />
       <VisibleTodoList />
-    <Card.Text style={{textAlign: 'justify'}} >
+    <Card.Text style={{textAlign: 'justify'}}>
     </Card.Text>
     </Card.Body>
   </Card>

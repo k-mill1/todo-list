@@ -3,7 +3,6 @@ import Table from "react-bootstrap/Table";
 import Todo from "./Todo";
 
 function VisibleTodos(props) {
-
   return (
     <>
       <Table>
