@@ -1,6 +1,7 @@
 import { connect } from 'react-redux'
 import { toggleItem } from './actions'
 import { removeItem } from './actions'
+import { clearAll } from './actions'
 import  VisibleTodos  from './VisibleTodos'
 
 function getVisibleTodos(items, filter) {
@@ -28,9 +29,13 @@ function mapDispatchToProps(dispatch) {
         },
         removeClick: id => {
             dispatch(removeItem(id))
+        },
+        removeAll: () => {
+            dispatch(clearAll())
         }
     }
 }
+
 
 const VisibleTodoList = connect(mapStateToProps, mapDispatchToProps)(VisibleTodos)
 

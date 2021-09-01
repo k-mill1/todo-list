@@ -3,7 +3,7 @@ import {
     VisibilityFilters,
     ADD_ITEM,
     REMOVE_ITEM,
-    // EDIT_ITEM,
+    CLEAR_ALL,
     TOGGLE_ITEM,
     SET_VISIBILITY_FILTER,
 } from './actions.js';
@@ -16,6 +16,7 @@ function visibilityFilterReducer(state = VisibilityFilters.SHOW_ALL, action) {
             return state
     }
 }
+const initialState = []
 
 function itemReducer(state = [], action) {
     switch (action.type) {
@@ -40,6 +41,9 @@ function itemReducer(state = [], action) {
                     })
                 } return item
             })
+        case CLEAR_ALL:
+            return initialState
+
         default:
             return state
     }

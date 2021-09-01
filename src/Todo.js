@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
+import './App.css';
 
 function Todo(props) {
   return (
@@ -13,9 +14,8 @@ function Todo(props) {
       <td>
         {props.description}
       </td>
-
       <td>
-        <Button variant="danger" onClick={props.removeClick}>
+        <Button className = "remove-button" variant="danger" onClick={props.removeClick}>
           remove
         </Button>
       </td>

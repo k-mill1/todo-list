@@ -5,6 +5,15 @@
 .todos-header {
   font-size: 30px;
 }
+
 .input-field {
   margin: 10px  
+}
+
+.clearAll {
+  float: right
+}
+
+.remove-button {
+  float: right
 }

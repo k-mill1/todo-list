@@ -1,6 +1,8 @@
 import React from "react";
 import Table from "react-bootstrap/Table";
+import Button from "react-bootstrap/Button";
 import Todo from "./Todo";
+import './App.css';
 
 function VisibleTodos(props) {
   return (
@@ -23,7 +25,17 @@ function VisibleTodos(props) {
             />
           ))}
         </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">
+              <Button className = "clearAll" variant="danger" onClick={props.removeAll}>
+                Clear All
+              </Button>
+            </td>
+          </tr>
+        </tfoot>
       </Table>
+
     </>
   );
 }
