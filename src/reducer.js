@@ -3,7 +3,7 @@ import {
     VisibilityFilters,
     ADD_ITEM,
     REMOVE_ITEM,
-    EDIT_ITEM,
+    // EDIT_ITEM,
     TOGGLE_ITEM,
     SET_VISIBILITY_FILTER,
 } from './actions.js';
@@ -19,7 +19,7 @@ function visibilityFilterReducer(state = VisibilityFilters.SHOW_ALL, action) {
 
 function itemReducer(state = [], action) {
     switch (action.type) {
-        case ADD_ITEM:
+        case ADD_ITEM:       
             return [
                 ...state,
                 {

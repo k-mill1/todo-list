@@ -3,11 +3,13 @@ import Table from "react-bootstrap/Table";
 import Todo from "./Todo";
 
 function VisibleTodos(props) {
+
   return (
     <>
       <Table>
         <thead>
           <tr>
+            <th>Completed</th>
             <th>Task</th>
             <th>Action</th>
           </tr>
@@ -17,7 +19,7 @@ function VisibleTodos(props) {
             <Todo
               key={item.id}
               {...item}
-              onClick={() => props.onItemClick(item.id)}
+              onChange={() => props.onCheckboxClick(item.id)}
               removeClick={() => props.removeClick(item.id)}
             />
           ))}

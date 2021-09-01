@@ -23,7 +23,7 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        onItemClick: id => {
+        onCheckboxClick: id => {
             dispatch(toggleItem(id))
         },
         removeClick: id => {

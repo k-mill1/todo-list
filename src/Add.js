@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { connect } from 'react-redux';
@@ -11,8 +10,6 @@ const Add = (props) => {
   let input;
   return (
     <>
-      {/* <Card className="mb-5 mt-2">
-        <Card.Body> */}
           <Form
             onSubmit = {(e) => {
               e.preventDefault();
@@ -30,14 +27,10 @@ const Add = (props) => {
                     }}
                 />
             </Row>
-           
-                <Button className="ml-5 add-button" type="submit">
-                    Add
-                </Button>
-            
+              <Button className="ml-5 add-button" type="submit">
+                  Add
+              </Button>  
           </Form>
-        {/* </Card.Body>
-      </Card> */}
     </>
   );
 };

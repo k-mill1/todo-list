@@ -5,14 +5,13 @@ function Todo(props) {
   return (
     <tr>
       <td>
-        <span
-          style={{
-            textDecoration: props.completed ? "line-through" : "none",
-          }}
-          onClick={props.onClick}
-        >
+        <input type="checkbox"
+        style = {{margin: "0 10px"}}
+        checked={props.completed}
+        onChange={props.onChange} />
+      </td>
+      <td>
           {props.description}
-        </span>
       </td>
 
       <td>
