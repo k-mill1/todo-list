@@ -27,9 +27,11 @@ const Add = (props) => {
                     }}
                 />
             </Row>
-              <Button className="ml-5 add-button blue-button" type="submit">
+            <Row className = "add-margin">
+              <Button className="ml-5 blue-button" type="submit">
                   Add
-              </Button>  
+              </Button>
+            </Row>  
           </Form>
     </>
   );

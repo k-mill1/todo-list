@@ -6,7 +6,7 @@ import { VisibilityFilters } from './actions'
 function Links() {
   return (
     <>
-      <Nav variant="tabs" defaultActiveKey="ALL">
+      <Nav className = "links" variant="tabs" defaultActiveKey="ALL">
         <LinkContainer filter = {VisibilityFilters.SHOW_ALL}>ALL</LinkContainer>
         <LinkContainer filter = {VisibilityFilters.SHOW_ACTIVE}>ACTIVE</LinkContainer>
         <LinkContainer filter = {VisibilityFilters.SHOW_COMPLETED}>COMPLETED</LinkContainer>

@@ -2,14 +2,38 @@
   margin: 5px 10px 10px 10px   
 }
 
+.app-card{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.links{
+  justify-content: space-between;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 15px
+}
+
+.nav-link {
+  color: #266861
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: white;
+  background-color: #298F85;
+  border-color: #dee2e6;
+  margin-bottom: 0px;
+  border-radius: 5px;
+}
+
 .todos-header {
   font-size: 30px;
+  color: white;
+  background-color: #266861
 }
 
 .input-field {
-  margin: 10px  
+  margin: 35px 0px 5px 0px  
 }
-
 
 .action {
   float: right;
@@ -36,8 +60,17 @@
   background-color: #0d6efd; 
 }
 
-.bue-button:hover {
-  background-color: #1f3a63;
+.blue-button {
+  background-color: #298F85 !important;
+  border-color: #298F85 !important;
 }
 
+.blue-button:hover {
+  background-color: #266861 !important;
+}
+
+.add-margin {
+  margin-left:0px;
+  margin-right:0px;
+}
 
