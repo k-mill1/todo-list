@@ -19,12 +19,16 @@ function visibilityFilterReducer(state = VisibilityFilters.SHOW_ALL, action) {
 const initialState = []
 
 function itemReducer(state = [], action) {
+    let lastId = 0
+    if (JSON.stringify(state) !== "[]"){
+        lastId = state[state.length - 1].id + 1
+    }
     switch (action.type) {
-        case ADD_ITEM:       
+        case ADD_ITEM:      
             return [
                 ...state,
                 {
-                    id: action.id,
+                    id: lastId,
                     description: action.text,
                     completed: false
                 }

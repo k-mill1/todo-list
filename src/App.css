@@ -10,10 +10,34 @@
   margin: 10px  
 }
 
-.clearAll {
+
+.action {
+  float: right;
+  padding-right: 15px
+}
+
+.red-button {
   float: right
 }
 
-.remove-button {
-  float: right
+.red-button:focus,.red-button:active {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #dc3545;
 }
+
+.red-button:hover {
+  background-color: #a8222f;
+}
+
+.blue-button:focus,.blue-button:active {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #0d6efd; 
+}
+
+.bue-button:hover {
+  background-color: #1f3a63;
+}
+
+

@@ -11,11 +11,11 @@ function Todo(props) {
         checked={props.completed}
         onChange={props.onChange} />
       </td>
-      <td>
+      <td className = "task">
         {props.description}
       </td>
       <td>
-        <Button className = "remove-button" variant="danger" onClick={props.removeClick}>
+        <Button className = "red-button" variant="danger" onClick={props.removeClick}>
           remove
         </Button>
       </td>

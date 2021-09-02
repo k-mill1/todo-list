@@ -12,7 +12,7 @@ function VisibleTodos(props) {
           <tr>
             <th>Completed</th>
             <th>Task</th>
-            <th>Action</th>
+            <th ><span className = "action">Action</span></th>
           </tr>
         </thead>
         <tbody>
@@ -27,8 +27,8 @@ function VisibleTodos(props) {
         </tbody>
         <tfoot>
           <tr>
-            <td colspan="3">
-              <Button className = "clearAll" variant="danger" onClick={props.removeAll}>
+            <td colSpan="3">
+              <Button className = "red-button" variant="danger" onClick={props.removeAll}>
                 Clear All
               </Button>
             </td>
